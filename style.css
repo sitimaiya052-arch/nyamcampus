@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #4A382D;
+    line-height: 1.6;
+    background-color: #FAF7F2;
+}
+
+.navbar {
+    background-color: #2B211D;
+}
+
+.navbar-brand {
+    color: #D6B77A;
+}
+
+.nav-link {
+    color: #F8F1E7;
+}
+
+.nav-link:hover {
+    color: #D6B77A;
+}
+
+.hero {
+    background: linear-gradient(135deg, #DCC6A0, #F5EBDD);
+    color: #3D2B20;
+}
+
+.hero h1 {
+    color: #5B4030;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.gambar-produk {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    padding: 10px;
+    background-color: #F3EBDD;
+}
+
+.card-title {
+    color: #5B4030;
+}
+
+.harga {
+    color: #B18A50;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.btn-success {
+    background-color: #2B211D;
+    border-color: #2B211D;
+    color: #DCC18A;
+}
+
+.btn-success:hover {
+    background-color: #604A39;
+    border-color: #604A39;
+}
+
+footer {
+    background-color: #2B211D;
+    color: #DCC18A;
+}
+
+@media (max-width: 500px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 18px;
+    }
+
+    .hero {
+        padding: 30px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .gambar-produk {
+        height: 160px;
+    }
+
+    .card-title {
+        font-size: 15px;
+    }
+
+    .harga {
+        font-size: 15px;
+    }
+
+    #produk h2 {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .gambar-produk {
+        height: 180px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #produk .row > [class*="col"] {
+        flex: 0 0 20%;
+        width: 20%;
+        max-width: 20%;
+    }
+}
+
+.hero {
+    background: linear-gradient(135deg, #f3eee9, #c8bc9c);
+}
+
+.emoji-img {
+    font-size: 60px;
+    padding: 30px 0;
+    background-color: #c5b19e;
+}
+
+.harga {
+    color: #d5c48b;
+}
+
+.gambar-produk {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-title {
+    color: #4A382D;
+    font-weight: bold;
+}
+
+.harga {
+    color: #198754;
+    font-size: 18px;
+}
+
+.card .btn {
+    border-radius: 8px;
+}
