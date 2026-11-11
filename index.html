@@ -1,0 +1,804 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYAM CAMPUS</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">NYAM CAMPUS</a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#makanan">Makanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#minuman">Minuman</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#keranjang">Keranjang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HEADER -->
+<header class="hero text-white text-center">
+    <div class="container py-5">
+        <h1 class="display-4 fw-bold">NYAM CAMPUS</h1>
+        <p class="lead">Pesan makanan dan minuman favoritmu dengan mudah!</p>
+        <a href="#makanan" class="btn btn-light btn-lg mt-3">
+            Lihat Menu
+        </a>
+    </div>
+</header>
+
+<!-- MENU MAKANAN -->
+<section id="makanan" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-2">Menu Makanan</h2>
+        <p class="text-center mb-5">Pilih makanan favoritmu!</p>
+
+        <div class="row g-4">
+
+            <!-- AYAM GEPREK -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="ayam geprek.jpg" class="card-img-top gambar-produk" alt="Ayam Geprek">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Ayam Geprek</h5>
+                        <p class="harga fw-bold">Rp 15.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NASI GORENG -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="nasi goreng.jpg" class="card-img-top gambar-produk" alt="Nasi Goreng">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Nasi Goreng</h5>
+                        <p class="harga fw-bold">Rp 15.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MIE AYAM -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="mie ayam.jpg" class="card-img-top gambar-produk" alt="Mie Ayam">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Mie Ayam</h5>
+                        <p class="harga fw-bold">Rp 15.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAKSO -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="bakso.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Bakso</h5>
+                        <p class="harga fw-bold">Rp 17.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="cilok bandung.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">cilok bandung</h5>
+                        <p class="harga fw-bold">Rp 12.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="Cireng ayam suwir.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">cireng ayam suwir</h5>
+                        <p class="harga fw-bold">Rp 15.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="dimsum goreng.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">dimsum goreng</h5>
+                        <p class="harga fw-bold">Rp 17.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="dimsum mentai.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">dimsum mentai</h5>
+                        <p class="harga fw-bold">Rp 20.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="dimsum.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">dimsum ori</h5>
+                        <p class="harga fw-bold">Rp 17.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="Donat Toping.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">donat</h5>
+                        <p class="harga fw-bold">Rp 23.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="mie goreng.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">mie goreng</h5>
+                        <p class="harga fw-bold">Rp 12.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="mie rebus.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">mie rebus</h5>
+                        <p class="harga fw-bold">Rp 12.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="penyet.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">ayam penyet</h5>
+                        <p class="harga fw-bold">Rp 20.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="mix plate.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">mix plate</h5>
+                        <p class="harga fw-bold">Rp 17.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="rambutan .jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">udang rambutan</h5>
+                        <p class="harga fw-bold">Rp 17.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="tahu toping.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">tahu toping</h5>
+                        <p class="harga fw-bold">Rp 12.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="udang keju.jpg" class="card-img-top gambar-produk" alt="Bakso">
+
+                    <div class="card-body">
+                        <h5 class="card-title">udang keju</h5>
+                        <p class="harga fw-bold">Rp 20.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- MENU MINUMAN -->
+<section id="minuman" class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center mb-2">Menu Minuman</h2>
+        <p class="text-center mb-5">Pilih minuman favoritmu!</p>
+
+        <div class="row g-4">
+
+            <!-- ES TEH -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="teh poci.jpg" class="card-img-top gambar-produk" alt="Es Teh">
+
+                    <div class="card-body">
+                        <h5 class="card-title">teh poci</h5>
+                        <p class="harga fw-bold">Rp 6.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ES JERUK -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="es kosong.jpg" class="card-img-top gambar-produk" alt="Es Jeruk">
+
+                    <div class="card-body">
+                        <h5 class="card-title">es kosong</h5>
+                        <p class="harga fw-bold">Rp 4.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- KOPI -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="kopi.jpg" class="card-img-top gambar-produk" alt="Kopi">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Kopi</h5>
+                        <p class="harga fw-bold">Rp 15.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JUS ALPUKAT -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="le mineral.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">le mineral</h5>
+                        <p class="harga fw-bold">Rp 6.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="lemon tea.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">lemon tea</h5>
+                        <p class="harga fw-bold">Rp 8.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="milo.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">milo</h5>
+                        <p class="harga fw-bold">Rp 10.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="nutrisari.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">nutrisari</h5>
+                        <p class="harga fw-bold">Rp 8.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="pop ice.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">pop ice</h5>
+                        <p class="harga fw-bold">Rp 7.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="card h-100 text-center shadow-sm">
+                    <img src="Teh hijau.jpg" class="card-img-top gambar-produk" alt="Jus Alpukat">
+
+                    <div class="card-body">
+                        <h5 class="card-title">teh hijau</h5>
+                        <p class="harga fw-bold">Rp 6.000</p>
+
+                        <input type="number" class="form-control mb-3 jumlah"
+                            value="1" min="1">
+
+                        <button class="btn btn-success w-100"
+                            onclick="tambahKeranjang(this)">
+                            Tambah ke Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- KERANJANG -->
+<section id="keranjang" class="py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-4">Keranjang Belanja</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle">
+
+                <thead class="table-dark">
+                    <tr>
+                        <th>Nama Menu</th>
+                        <th>Harga</th>
+                        <th>Jumlah</th>
+                        <th>Subtotal</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+
+                <tbody id="isiKeranjang">
+                    <tr>
+                        <td colspan="5">Keranjang masih kosong</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="text-end mt-4">
+            <h4>Total: <span id="totalHarga">Rp 0</span></h4>
+
+            <button class="btn btn-danger mt-2"
+                onclick="kosongkanKeranjang()">
+                Kosongkan Keranjang
+            </button>
+
+            <button class="btn btn-success mt-2"
+                onclick="checkout()">
+                Checkout via WhatsApp
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- KONTAK -->
+<section id="kontak" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2>Hubungi Kami</h2>
+        <p>Terima kasih sudah memesan di NYAM CAMPUS!</p>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <p class="mb-0">&copy; 2026 NYAM CAMPUS. Semua hak dilindungi.</p>
+    </div>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+
+    // Tempat menyimpan pesanan
+    let keranjang = [];
+
+    // Menambahkan produk ke keranjang
+    function tambahKeranjang(button) {
+
+        let card = button.closest(".card");
+
+        let nama = card.querySelector(".card-title").innerText;
+
+        let hargaText = card.querySelector(".harga").innerText;
+        let harga = parseInt(hargaText.replace(/\D/g, ""));
+
+        let jumlah = parseInt(card.querySelector(".jumlah").value);
+
+        if (isNaN(jumlah) || jumlah < 1) {
+            alert("Masukkan jumlah minimal 1!");
+            return;
+        }
+
+        let produkAda = keranjang.find(item => item.nama === nama);
+
+        if (produkAda) {
+            produkAda.jumlah += jumlah;
+        } else {
+            keranjang.push({
+                nama: nama,
+                harga: harga,
+                jumlah: jumlah
+            });
+        }
+
+        tampilkanKeranjang();
+
+        alert(nama + " berhasil ditambahkan!");
+
+        card.querySelector(".jumlah").value = 1;
+    }
+
+    // Menampilkan keranjang
+    function tampilkanKeranjang() {
+
+        let isi = document.getElementById("isiKeranjang");
+        let total = 0;
+
+        isi.innerHTML = "";
+
+        if (keranjang.length === 0) {
+            isi.innerHTML = `
+                <tr>
+                    <td colspan="5">Keranjang masih kosong</td>
+                </tr>
+            `;
+        }
+
+        keranjang.forEach((item, index) => {
+
+            let subtotal = item.harga * item.jumlah;
+
+            total += subtotal;
+
+            isi.innerHTML += `
+                <tr>
+                    <td>${item.nama}</td>
+
+                    <td>Rp ${item.harga.toLocaleString("id-ID")}</td>
+
+                    <td>
+                        <input type="number"
+                            min="1"
+                            value="${item.jumlah}"
+                            class="form-control"
+                            style="width:80px; margin:auto;"
+                            onchange="ubahJumlah(${index}, this.value)">
+                    </td>
+
+                    <td>Rp ${subtotal.toLocaleString("id-ID")}</td>
+
+                    <td>
+                        <button class="btn btn-danger btn-sm"
+                            onclick="hapusItem(${index})">
+                            Hapus
+                        </button>
+                    </td>
+                </tr>
+            `;
+        });
+
+        document.getElementById("totalHarga").innerText =
+            "Rp " + total.toLocaleString("id-ID");
+    }
+
+    // Mengubah jumlah produk
+    function ubahJumlah(index, jumlah) {
+
+        jumlah = parseInt(jumlah);
+
+        if (isNaN(jumlah) || jumlah < 1) {
+            alert("Jumlah minimal 1!");
+            tampilkanKeranjang();
+            return;
+        }
+
+        keranjang[index].jumlah = jumlah;
+
+        tampilkanKeranjang();
+    }
+
+    // Menghapus produk
+    function hapusItem(index) {
+
+        keranjang.splice(index, 1);
+
+        tampilkanKeranjang();
+    }
+
+    // Mengosongkan keranjang
+    function kosongkanKeranjang() {
+
+        if (keranjang.length === 0) {
+            alert("Keranjang sudah kosong!");
+            return;
+        }
+
+        if (confirm("Yakin ingin mengosongkan keranjang?")) {
+            keranjang = [];
+            tampilkanKeranjang();
+        }
+    }
+
+    // Checkout ke WhatsApp
+    function checkout() {
+
+        if (keranjang.length === 0) {
+            alert("Keranjang masih kosong!");
+            return;
+        }
+
+        // Ganti dengan nomor WhatsApp penjual
+        let nomorWA = "6282283756725";
+
+        let pesanWA = "Halo NYAM CAMPUS, saya ingin memesan:\n\n";
+
+        let total = 0;
+
+        keranjang.forEach((item, index) => {
+
+            let subtotal = item.harga * item.jumlah;
+
+            total += subtotal;
+
+            pesanWA +=
+                (index + 1) + ". " + item.nama + "\n" +
+                "Jumlah: " + item.jumlah + "\n" +
+                "Harga: Rp " + item.harga.toLocaleString("id-ID") + "\n" +
+                "Subtotal: Rp " + subtotal.toLocaleString("id-ID") + "\n\n";
+        });
+
+        pesanWA +=
+            "TOTAL PEMBAYARAN: Rp " +
+            total.toLocaleString("id-ID") +
+            "\n\nTerima kasih.";
+
+        let url = "https://wa.me/" + nomorWA +
+            "?text=" + encodeURIComponent(pesanWA);
+
+        window.open(url, "_blank");
+    }
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
